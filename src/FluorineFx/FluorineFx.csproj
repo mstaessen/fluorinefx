@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9B8375B-579D-4F8A-B00C-F2828DB58F3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FluorineFx</RootNamespace>
+    <AssemblyName>FluorineFx</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/FluorineFx/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET_4_0;STRONG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\net\4.0\</OutputPath>
+    <DefineConstants>TRACE;NET_4_0;STRONG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="AMF3\ArrayCollection.cs" />
+    <Compile Include="AMF3\ByteArray.cs" />
+    <Compile Include="AMF3\ClassDefinition.cs" />
+    <Compile Include="AMF3\DataInput.cs" />
+    <Compile Include="AMF3\DataOutput.cs" />
+    <Compile Include="AMF3\IDataInput.cs" />
+    <Compile Include="AMF3\IDataOutput.cs" />
+    <Compile Include="AMF3\IExternalizable.cs" />
+    <Compile Include="AMF3\ObjectProxy.cs" />
+    <Compile Include="ASObject.cs" />
+    <Compile Include="ASObjectConverter.cs" />
+    <Compile Include="ASExceptionObject.cs" />
+    <Compile Include="Invocation\IInvocationCallback.cs" />
+    <Compile Include="Invocation\IInvocationManager.cs" />
+    <Compile Include="Invocation\IInvocationResultHandler.cs" />
+    <Compile Include="Invocation\InvocationHandler.cs" />
+    <Compile Include="Invocation\InvocationManager.cs" />
+    <Compile Include="IO\EntityObjectProxy.cs" />
+    <Compile Include="IO\ExceptionProxy.cs" />
+    <Compile Include="IO\ExternalizableProxy.cs" />
+    <Compile Include="IO\ObjectProxy.cs" />
+    <Compile Include="IO\ObjectProxyRegistry.cs" />
+    <Compile Include="IO\Readers\AMF3ExternalizableReader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Attribute\ActivationAttribute.cs" />
+    <Compile Include="Attribute\PageSizeAttribute.cs" />
+    <Compile Include="Attribute\RemotingServiceAttribute.cs" />
+    <Compile Include="Attribute\RoleAttribute.cs" />
+    <Compile Include="Attribute\TransferObjectAttribute.cs" />
+    <Compile Include="Attribute\TransientAttribute.cs" />
+    <Compile Include="Browser\IServiceBrowserRenderer.cs" />
+    <Compile Include="Collections\CollectionComparer.cs" />
+    <Compile Include="Collections\CopyOnWriteArraySet.cs" />
+    <Compile Include="Collections\CopyOnWriteDictionary.cs" />
+    <Compile Include="Collections\Generic\CollectionBase.cs" />
+    <Compile Include="Collections\Generic\ConcurrentLinkedQueue.cs" />
+    <Compile Include="Collections\Generic\CopyOnWriteArray.cs" />
+    <Compile Include="Collections\Generic\CopyOnWriteArraySet.cs" />
+    <Compile Include="Collections\Generic\CopyOnWriteDictionary.cs" />
+    <Compile Include="Collections\Generic\IQueue.cs" />
+    <Compile Include="Collections\Generic\ReadOnlyCollection.cs" />
+    <Compile Include="Collections\IModifiableCollection.cs" />
+    <Compile Include="Collections\Inserter.cs" />
+    <Compile Include="Collections\IOutputIterator.cs" />
+    <Compile Include="Collections\IReversible.cs" />
+    <Compile Include="Collections\ISet.cs" />
+    <Compile Include="Collections\LinkedList.cs" />
+    <Compile Include="Collections\RbTree.cs" />
+    <Compile Include="Collections\RbTreeNode.cs" />
+    <Compile Include="Collections\ReadOnlyCollection.cs" />
+    <Compile Include="Collections\ReversedTree.cs" />
+    <Compile Include="Collections\Set.cs" />
+    <Compile Include="Collections\SetBase.cs" />
+    <Compile Include="Collections\SetEnumerator.cs" />
+    <Compile Include="Collections\SetOp.cs" />
+    <Compile Include="Collections\SynchronizedDictionaryEnumerator.cs" />
+    <Compile Include="Collections\SynchronizedEnumerator.cs" />
+    <Compile Include="Collections\SynchronizedHashtable.cs" />
+    <Compile Include="Collections\TreeSet.cs" />
+    <Compile Include="Configuration\FluorineConfiguration.cs" />
+    <Compile Include="Configuration\FluorineSettings.cs" />
+    <Compile Include="Configuration\XmlConfigurator.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Exceptions\IllegalStateException.cs" />
+    <Compile Include="IO\ASObjectProxy.cs" />
+    <Compile Include="IO\IKeyFrameDataAnalyzer.cs" />
+    <Compile Include="IO\IObjectProxy.cs" />
+    <Compile Include="IO\KeyFrameMeta.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3VectorReader.cs" />
+    <Compile Include="IO\Tag.cs" />
+    <Compile Include="IO\WcfProxy.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0XElementWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0XDocumentWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3VectorWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3XDocumentWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3XElementWriter.cs" />
+    <Compile Include="IO\Writers\RawBinaryWriter.cs" />
+    <Compile Include="Net\Fault.cs" />
+    <Compile Include="Net\Responder.cs" />
+    <Compile Include="Net\SyncEvent.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0NameObjectCollectionWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3NameObjectCollectionWriter.cs" />
+    <Compile Include="Reflection\ConstructorExtensions.cs" />
+    <Compile Include="Reflection\Lightweight\AbstractEmitter.cs" />
+    <Compile Include="Reflection\Lightweight\Delegates.cs" />
+    <Compile Include="Reflection\Lightweight\CtorInvocationEmitter.cs" />
+    <Compile Include="Reflection\Lightweight\EmitHelper.cs" />
+    <Compile Include="Reflection\Lightweight\GenericBinder.cs" />
+    <Compile Include="Reflection\Lightweight\InvocationEmitter.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="IO\IStreamableFile.cs" />
+    <Compile Include="IO\ITag.cs" />
+    <Compile Include="IO\ITagReader.cs" />
+    <Compile Include="IO\ITagWriter.cs" />
+    <Compile Include="Threading\FastReaderWriterLock.cs" />
+    <Compile Include="Util\ArrayUtils.cs" />
+    <Compile Include="Util\AsyncResult.cs" />
+    <Compile Include="Util\AsyncResultNoResult.cs" />
+    <Compile Include="Util\AtomicInteger.cs" />
+    <Compile Include="Util\AtomicLong.cs" />
+    <Compile Include="Util\BufferStreamReader.cs" />
+    <Compile Include="Util\CollectionUtils.cs" />
+    <Compile Include="Util\CompareUtils.cs" />
+    <Compile Include="Util\Convert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\AMFRequestHeaders.cs" />
+    <Compile Include="Diagnostic\DebugEvent.cs" />
+    <Compile Include="Diagnostic\DescribeService.cs" />
+    <Compile Include="Diagnostic\HttpHeader.cs" />
+    <Compile Include="Diagnostic\NetDebug.cs" />
+    <Compile Include="Diagnostic\TraceHeader.cs" />
+    <Compile Include="Exceptions\ClientRejectedException.cs" />
+    <Compile Include="Exceptions\FluorineException.cs" />
+    <Compile Include="Exceptions\ProtocolException.cs" />
+    <Compile Include="Exceptions\ServiceNotFoundException.cs" />
+    <Compile Include="Exceptions\UnexpectedAMF.cs" />
+    <Compile Include="IO\AMFBody.cs" />
+    <Compile Include="IO\AMFDeserializer.cs" />
+    <Compile Include="IO\AMFHeader.cs" />
+    <Compile Include="IO\AMFMessage.cs" />
+    <Compile Include="IO\AMFReader.cs" />
+    <Compile Include="IO\AMFSerializer.cs" />
+    <Compile Include="IO\AMFWriter.cs" />
+    <Compile Include="IO\Bytecode\CodeDom\AMF0ReflectionOptimizer.cs" />
+    <Compile Include="IO\Bytecode\CodeDom\AMF3ReflectionOptimizer.cs" />
+    <Compile Include="IO\Bytecode\CodeDom\BytecodeProvider.cs" />
+    <Compile Include="IO\Bytecode\IBytecodeProvider.cs" />
+    <Compile Include="IO\Bytecode\IReflectionOptimizer.cs" />
+    <Compile Include="IO\Bytecode\Lightweight\AMF0ReflectionOptimizer.cs" />
+    <Compile Include="IO\Bytecode\Lightweight\AMF3ReflectionOptimizer.cs" />
+    <Compile Include="IO\Bytecode\Lightweight\BytecodeProvider.cs" />
+    <Compile Include="IO\CacheableObject.cs" />
+    <Compile Include="IO\MessageOutput.cs" />
+    <Compile Include="IO\RawBinary.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0AMF3TagReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0ArrayReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0ASObjectReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0AssociativeArrayReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0BooleanReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0DateTimeReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0LongStringReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0NullReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0NumberReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0ObjectReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0OptimizedObjectReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0ReferenceReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0StringReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0TypedASObjectReader.cs" />
+    <Compile Include="IO\Readers\AMF0\AMF0XmlReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3ArrayReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3BooleanFalseReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3BooleanTrueReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3ByteArrayReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3DateTimeReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3IntegerReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3NullReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3NumberReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3ObjectReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3OptimizedObjectReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3StringReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3TypedASObjectReader.cs" />
+    <Compile Include="IO\Readers\AMF3\AMF3XmlReader.cs" />
+    <Compile Include="IO\Readers\AMFUnknownTagReader.cs" />
+    <Compile Include="IO\Readers\IAMFReader.cs" />
+    <Compile Include="IO\ResponseBody.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0AMF3TagWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0ArrayWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0ASObjectWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0BooleanWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0CacheResultWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0CharWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0DataSetWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0DataTableWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0DateTimeWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0DBNullWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0EnumWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0GuidWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0NullWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0NumberWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0ObjectWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0SqlTypesWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0StringWriter.cs" />
+    <Compile Include="IO\Writers\AMF0\AMF0XmlDocumentWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3ArrayWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3ASObjectWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3BooleanWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3ByteArrayWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3CacheResultWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3CharWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3DataSetWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3DataTableWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3DateTimeWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3DBNullWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3DoubleWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3EnumWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3GuidWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3IntWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3ObjectWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3SqlTypesWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3StringWriter.cs" />
+    <Compile Include="IO\Writers\AMF3\AMF3XmlDocumentWriter.cs" />
+    <Compile Include="IO\Writers\IAMFWriter.cs" />
+    <Compile Include="IO\IOConstants.cs" />
+    <Compile Include="MethodHandler.cs" />
+    <Compile Include="ObjectFactory.cs" />
+    <Compile Include="PageableResult.cs" />
+    <Compile Include="StringWriterWithEncoding.cs" />
+    <Compile Include="Threading\WorkItem.cs" />
+    <Compile Include="Threading\WorkItemsQueue.cs" />
+    <Compile Include="TypeHelper.cs" />
+    <Compile Include="Util\BufferPool.cs" />
+    <Compile Include="Util\ByteBuffer.cs" />
+    <Compile Include="Collections\CopyOnWriteArray.cs" />
+    <Compile Include="Util\DataTableSchemaImporterExtension.cs" />
+    <Compile Include="Util\DateTimeUtils.cs" />
+    <Compile Include="Util\DisposableBase.cs" />
+    <Compile Include="Util\DumpContext.cs" />
+    <Compile Include="Util\IndentedTextWriter.cs" />
+    <Compile Include="Util\InvariantStringArray.cs" />
+    <Compile Include="Util\Layouter.cs" />
+    <Compile Include="Util\MiscellaneousUtils.cs" />
+    <Compile Include="Util\NetworkUtils.cs" />
+    <Compile Include="Util\Nullables\INullableType.cs" />
+    <Compile Include="Util\Nullables\NullableDateTime.cs" />
+    <Compile Include="Util\NumberUtils.cs" />
+    <Compile Include="Util\ObjectPool.cs" />
+    <Compile Include="Collections\ReadOnlyList.cs" />
+    <Compile Include="Util\PathUtil.cs" />
+    <Compile Include="Util\ReflectionUtils.cs" />
+    <Compile Include="Util\StringUtils.cs" />
+    <Compile Include="Util\ThreadingUtils.cs" />
+    <Compile Include="Util\Unreferenced.cs" />
+    <Compile Include="Util\UriBase.cs" />
+    <Compile Include="Util\ValidationUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>
